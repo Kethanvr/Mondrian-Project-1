@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mondrian Project</title>
+  <style>
+    /* 
+    Write your CSS here 
+    Gap Colour: #000
+    White: #F0F1EC
+    Red: #E72F24
+    Black: #232629
+    Blue: #004592
+    Yellow: #F9D01E
+
+    For dimensions, see dimensions.png image.
+    HINT: Remember you can't change the properties of grid lines.
+    But grid lines are transparent!
+    */
+    .box{
+      background-color: #000;
+      height: 748px;
+      width: 748px;
+      display: grid;
+      grid-template-columns: 320px 198px 153px 50px;
+      grid-template-rows: 414px 130px 155px 20px;
+      gap: 9px;
+    }
+    #hi{
+      background-color: #E72F24;
+      grid-column-start: 1;
+      grid-column-end: 2;
+      grid-row-start: 1 ;
+      grid-row-end: 2;
+    }
+    #hii{
+      background-color: #F0F1EC ;
+      /* grid-area: 2/2/2/3; */
+      grid-column-start: 1;
+      grid-column-end: 2;
+      grid-row-start: 2 ;
+      grid-row-end: 4;
+    }
+    #hiii{
+      background-color:#F0F1EC;
+      grid-column-start: 1;
+      grid-column-end: 2;
+      grid-row-start: 4 ;
+      grid-row-end: 5;
+    }
+    #hiiii{
+      background-color:#F0F1EC;
+      grid-column-start: 2;
+      grid-column-end: 5;
+      grid-row-start: 1 ;
+      grid-row-end: 2;
+    }
+    #hiiiii{
+      background-color:#F0F1EC;
+      grid-column-start: 2;
+      grid-column-end: 4;
+      grid-row-start: 2 ;
+      grid-row-end: 4;
+    }
+    #hiiiiii{
+      background-color:#004592;
+      grid-column-start: 4;
+      grid-column-end: 5;
+      grid-row-start: 2 ;
+      grid-row-end: 3;
+    }
+    #hiiiiiii{
+      background-color:#F9D01E;
+      grid-column-start: 2;
+      grid-column-end: 3;
+      grid-row-start: 4 ;
+      grid-row-end: 5;
+    }
+    #hiiiiiiii{
+      background-color:#232629;
+      grid-column-start: 3;
+      grid-column-end: 4;
+      grid-row-start: 4 ;
+      grid-row-end: 5;
+    }
+    #hiiiiiiiii{
+      background-color:#F0F1EC;
+      grid-column-start: 4;
+      grid-column-end: 5;
+      grid-row-start: 3 ;
+      grid-row-end: 5;
+    }
+    .big{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- Write your HTML here -->
+   <div class="big">
+   <div class="box">
+    <div class="item" id="hi"></div>
+    <div class="item" id="hii" ></div>
+    <div class="item" id="hiii" ></div>
+    <div class="item" id="hiiii" ></div>
+    <div class="item" id="hiiiii" ></div>
+    <div class="item" id="hiiiiii" ></div>
+    <div class="item" id="hiiiiiii" ></div>
+    <div class="item" id="hiiiiiiii" ></div>
+    <div class="item" id="hiiiiiiiii" ></div>
+   </div>
+  </div>
+</body>
+
+</html>
